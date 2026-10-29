@@ -1,8 +1,8 @@
--name: Play1
- hosts: localhost
- connection: local
- tasks:
- -name: printing a text from play 1 task 1
-  debug:
-   msg: "Hi, this is from PLAY1 and Task1"
-  ping:
+- name: Play1
+  hosts: localhost
+  connection: local
+  tasks:
+    - name: printing a text from play 1 task 1
+      debug:
+        msg: "Hi, this is from PLAY1 and Task1"
+      ping:
