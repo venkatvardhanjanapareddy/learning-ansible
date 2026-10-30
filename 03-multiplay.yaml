@@ -1,0 +1,23 @@
+- name: trying mutliplay - PLAY 1
+  hosts: local
+  connection: local
+  tasks:
+    - name: Play 1 Task 1
+      debug:
+        msg: "This is the task 1 from play 1"
+
+    - name: Play1 Task 2
+      debug:
+        msg: "This is the task 2 of play 1"
+
+- name: This is PLAY 2
+  hosts: local
+  connection: local
+  tasks:
+    - name: play 2 Task 1
+      debug:
+        msg: "This is the task 1 of play 2"
+
+    - name: play 2 task 2
+      debug:
+        msg: "This is task 2 from play 2"
