@@ -7,9 +7,9 @@
     - name: Print if even
       debug:
         msg: "Given number {{ given_number }} is even"
-      when: given_number % 2 == 0
+      when: given_number | int % 2 == 0 #converted to int to make it work for cli variables
 
     - name: print if odd
       debug:
         msg: "Given number {{ given_number }} is odd"
-      when: given_number % 2 != 0
+      when: given_number | int % 2 != 0
