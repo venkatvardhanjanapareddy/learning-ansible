@@ -11,7 +11,7 @@
     - vars.yaml
   tasks:
     - name: Checking var preference
-      vars:
-        textone: "Variable-at-Task"
+      # vars:
+      #   textone: "Variable-at-Task"
       debug:
         msg: "Printing from {{ textone }}"
