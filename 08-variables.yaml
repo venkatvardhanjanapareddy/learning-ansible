@@ -5,7 +5,7 @@
     - name: username
       prompt: ENter UserName
       private: false
-    - name: password
+    - name: passwordd
       prompt: Enter Password
       private: True
   tasks:
