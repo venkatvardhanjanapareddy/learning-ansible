@@ -1,0 +1,7 @@
+- name: trying filters == functions
+  hosts: local
+  connection: local
+  tasks:
+    - name: using default filter
+      debug:
+      msg: "Hi, my name is {{ my_name | default('Vardhan') }}"
