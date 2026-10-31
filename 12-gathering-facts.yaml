@@ -1,0 +1,7 @@
+- name: getting facts
+  hosts: local
+  connection: local
+  tasks:
+    - name: printing facts
+      debug:
+        msg: "{{ ansible_facts }}" #special varaible - ansible_facts
