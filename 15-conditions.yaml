@@ -1,0 +1,15 @@
+- name: install nginx based on OS
+  hosts: local
+  connection: local
+  tasks:
+    - name: Use dnf if redhat
+      dnf:
+        name: nginx
+        state: present
+      when: ansible_facts.os_family == "Redhat"
+
+    - name: use apt get if Debian
+      apt:
+        name: nginx
+        state: present
+      when: ansible_facts.os_family == "Debian"
