@@ -2,16 +2,16 @@
   hosts: local
   connection: local
   vars:
-    textone: "Variable at PLAY"
+    textone: "Variable-at-PLAY"
   vars_prompt:
     - name: textone
-      prompt: "Variable from prompt"
+      prompt: "Variable-from-prompt"
       private: false
   vars_files:
     - vars.yaml
   tasks:
     - name: Checking var preference
       vars:
-        textone: "Variable at Task"
+        textone: "Variable-at-Task"
       debug:
         msg: "Printing from {{ textone }}"
