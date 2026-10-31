@@ -1,0 +1,10 @@
+- name: variable at task level
+  hosts: local
+  connection: local
+  tasks:
+    - name: Trying var at task
+      vars:
+        course: DevSecOps with AWS and AIOps
+        my_name: Vardhan
+      debug:
+        msg: "I'm {{my_name}}, I have been working on {{course}}."
