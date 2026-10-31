@@ -14,3 +14,5 @@
     - name: using join
       debug:
         msg: "My full name is {{ full_name | join(' ') }}"
+
+  # "{{ topics | split(', ')}}" if we use text then list isn't working, need to store in another variable and then use it with the text to print as list.  List and text are 2 different things to print.
