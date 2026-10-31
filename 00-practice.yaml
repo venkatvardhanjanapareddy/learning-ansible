@@ -8,4 +8,4 @@
     - name: will try to use variables
       debug:
         msg: "Here we can print the variable value: {{ ansible }} "
-      when: condition == correct
+      when: condition == "correct"
