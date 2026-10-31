@@ -9,4 +9,4 @@
     - name: trying loops
       debug:
         msg: "Say Hi to {{ item }}" #itme is reserved keyword for loops
-      loop: { { DevOps } }
+      loop: DevOps
