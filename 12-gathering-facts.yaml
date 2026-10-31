@@ -4,4 +4,10 @@
   tasks:
     - name: printing facts
       debug:
-        msg: "{{ ansible_facts }}" #special varaible - ansible_facts
+        msg: "tests"
+        # msg: "{{ ansible_facts }}" #special varaible - ansible_facts
+    - name: Printing few values from facts
+      debug:
+        msg: |
+          OS Family: {{ ansible_facts['os_family'] }}
+          Python version: {{ ansible_facts.python_version}}
