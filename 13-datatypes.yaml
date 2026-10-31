@@ -24,3 +24,10 @@
           skills : {{ skills | type_debug }}
           my_details : {{ my_details | type_debug }}
           exact_weight : {{ exact_weight | type_debug }}
+
+    # firstname : AnsibleUnicode
+    # myweight : int
+    # male : bool
+    # skills : list
+    # my_details : dict
+    # exact_weight : float
