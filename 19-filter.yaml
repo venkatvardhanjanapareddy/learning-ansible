@@ -4,4 +4,4 @@
   tasks:
     - name: using default filter
       debug:
-      msg: "Hi, my name is {{ my_name | default('Vardhan') }}"
+        msg: "Hi, my name is {{ my_name | default('Vardhan') }}"
