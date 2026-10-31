@@ -1,4 +1,4 @@
 event: publish
 media: Post
 platform: LinkedIn
-text1: "Variable from vars file"
+textone: "Variable from vars file"
