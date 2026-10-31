@@ -1,0 +1,9 @@
+- name: over write variabes from cli
+  hosts: local
+  connection: local
+  vars:
+    username: VardhanJ
+  tasks:
+    - name: Get values from cli, also given in play level
+      debug:
+        msg: "This is the {{username}} and I'm a {{course}} Engineer"
