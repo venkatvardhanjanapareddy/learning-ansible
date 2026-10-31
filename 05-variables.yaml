@@ -2,8 +2,9 @@
   hosts: local
   connection: local
   vars:
-    play1: play1-var
+    myname: Vardhan
+    expert_in: DevSecOps
   tasks:
     - name: take the variable from play
       debug:
-        msg: "This variable is from the play: {{ play1 }} "
+        msg: "I am {{ myname }}, I'm a {{ expert_in }} Engineer."
