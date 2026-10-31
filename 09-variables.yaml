@@ -1,0 +1,7 @@
+- name: variables form inventory.ini
+  hosts: local
+  connection: local
+  tasks:
+    - name: Accessing variables from inventory.ini
+      debug:
+        msg: "I'm {{username}}, improving my skillset on {{course}} from {{platform}}"
