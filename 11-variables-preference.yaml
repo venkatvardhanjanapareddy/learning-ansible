@@ -14,4 +14,4 @@
       vars:
         text1: "Variable at Task"
       debug:
-        msg: "Printing from {{text1}}"
+        msg: "Printing from {{ text1 }}"
