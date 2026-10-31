@@ -2,24 +2,24 @@
   hosts: local
   connection: local
   vars:
-    my_name: vardhan
-    weight: 75
+    firstname: vardhan
+    myweight: 75
     is_male: true
     skills:
       - Linux
       - AWS
       - Shell Script
       - Ansible
-    more_details:
+    my_details:
       father: Gopala Krishna
       mother: Sarada
     exact_weight: 75.6
     tasks:
       debug:
         msg: |
-          myname - {{ my_name | type_debug }}
-          weight - {{ weight | type_debug }}
+          firstname - {{ firstname | type_debug }}
+          myweight - {{ myweight | type_debug }}
           male - {{ is_male | type_debug }}
           skills - {{ skills | type_debug }}
-          more_details - {{ more_details | type_debug }}
-          exact_weight - {{ more_details | type_debug }}
+          my_details - {{ my_details | type_debug }}
+          exact_weight - {{ exact_weight | type_debug }}
