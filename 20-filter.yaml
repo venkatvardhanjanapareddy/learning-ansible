@@ -1,0 +1,16 @@
+- name: using split and join filter
+  hosts: local
+  connection: local
+  vars:
+    topics: Linux, Shell, Ansible, Terraform
+    full_name:
+      - Venkat
+      - Vardhan
+      - Janapareddy
+  tasks:
+    - name: Using split
+      debug:
+        msg: "List of topics are {{ topics | split(',') }}"
+    - name: using join
+      debug:
+        msg: "My full name is {{ full_name | join(' ') }}"
