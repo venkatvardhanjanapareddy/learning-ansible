@@ -2,7 +2,7 @@
   hosts: local
   connection: local
   become: yes
-  var:
+  vars:
     packages:
       - { name: "nginx", state: "present" }
       - { name: "htop", state: "absent" }
