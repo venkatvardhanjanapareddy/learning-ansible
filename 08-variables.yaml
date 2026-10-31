@@ -5,10 +5,10 @@
     - name: username
       prompt: ENter UserName
       private: false
-    - name: passwordd
+    - name: password
       prompt: Enter Password
       private: True
   tasks:
     - name: Capture prompt variable values
       debug:
-        msg: "Username is {{username}}, password given is {{password}}"
+        msg: "Username is {{username}}, password given is {{password}}" # name in vars_prompt is the variable name
