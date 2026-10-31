@@ -15,11 +15,12 @@
       mother: Sarada
     exact_weight: 75.6
     tasks:
-      debug:
-        msg: |
-          firstname : {{ firstname | type_debug }}
-          myweight : {{ myweight | type_debug }}
-          male : {{ is_male | type_debug }}
-          skills : {{ skills | type_debug }}
-          my_details : {{ my_details | type_debug }}
-          exact_weight : {{ exact_weight | type_debug }}
+      - name: check variable data types
+        debug:
+          msg: |
+            firstname : {{ firstname | type_debug }}
+            myweight : {{ myweight | type_debug }}
+            male : {{ is_male | type_debug }}
+            skills : {{ skills | type_debug }}
+            my_details : {{ my_details | type_debug }}
+            exact_weight : {{ exact_weight | type_debug }}
