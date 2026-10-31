@@ -11,6 +11,4 @@
       package:
         name: "{{ item }}"
         state: present
-      debug:
-        msg: "Installing {{ item }}"
       loop: "{{ packages }}"
