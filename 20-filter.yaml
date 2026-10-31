@@ -10,7 +10,7 @@
   tasks:
     - name: Using split
       debug:
-        msg: "List of topics are {{ topics | split(', ')}}"
+        msg: "{{ topics | split(', ')}}"
     - name: using join
       debug:
         msg: "My full name is {{ full_name | join(' ') }}"
