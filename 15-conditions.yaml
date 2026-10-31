@@ -1,6 +1,7 @@
 - name: install nginx based on OS
   hosts: local
   connection: local
+  # become: yes use -b in command for sudo access
   tasks:
     - name: Use dnf if redhat
       dnf:
