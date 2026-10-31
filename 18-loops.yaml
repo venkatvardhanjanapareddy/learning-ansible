@@ -1,0 +1,17 @@
+- name: instyalling packages using loops
+  hosts: local
+  connection: local
+  become: yes
+  var:
+    packages:
+      - { name: "nginx", state: "present" }
+      - { name: "htop", state: "absent" }
+      - { name: "mysql", state: "absent" }
+      - { name: "git", state: "present" }
+
+  tasks:
+    - name: Modify packages - using dict
+      package:
+        name: "{{ item.name }}"
+        state: "{{ item.state }}"
+      loop: "{{ packages }}"
