@@ -25,7 +25,7 @@
           my_details : {{ my_details | type_debug }}
           exact_weight : {{ exact_weight | type_debug }}
 
-    # firstname : AnsibleUnicode
+    # firstname : AnsibleUnicode/ stirng
     # myweight : int
     # male : bool
     # skills : list
