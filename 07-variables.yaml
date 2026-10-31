@@ -1,6 +1,7 @@
 - name: Variables from diff file
   hosts: local
   connection: local
+  # use vars_files to add files, multiple files can be added
   vars_files:
     - vars.yaml
   tasks:
