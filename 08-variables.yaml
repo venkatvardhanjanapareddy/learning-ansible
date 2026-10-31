@@ -1,0 +1,14 @@
+- name: Variables from prompt
+  hosts: local
+  connection: local
+  vars_prompt:
+    - name: username
+      prompt: ENter UserName
+      private: false
+    - name: password
+      prompt: Enter Password
+      private: True
+  tasks:
+    - name: Capture prompt variable values
+      debug:
+        msg: "Username is {{username}}, password given is {{password}}"
