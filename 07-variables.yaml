@@ -1,7 +1,7 @@
 - name: Variables from diff file
   hosts: local
   connection: local
-  vars:
+  vars_files:
     - vars.yaml
   tasks:
     - name: accessing variables from another file
