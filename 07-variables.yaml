@@ -1,0 +1,9 @@
+- name: Variables from diff file
+  hosts: local
+  connection: local
+  vars:
+    - vars.yaml
+  tasks:
+    - name: accessing variables from another file
+      debug:
+        msg: "Thinking to {{ event }} a {{ media }} on {{ platform }}."
