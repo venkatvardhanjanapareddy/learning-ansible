@@ -1,8 +1,8 @@
 - name: Testing the variable prefernece
   hosts: local
   connection: local
-  vars:
-    textone: "Variable-at-PLAY"
+  # vars:
+  #   textone: "Variable-at-PLAY"
   # vars_prompt:
   #   - name: textone
   #     prompt: "Variable-from-prompt"
@@ -19,3 +19,4 @@
 # 2nd is task
 # 3rd is file
 # 4th is prompt
+# 5th is play
