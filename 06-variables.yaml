@@ -1,6 +1,8 @@
 - name: variable at task level
   hosts: local
   connection: local
+  vars:
+    course: DevOps with AWS and AIOps
   tasks:
     - name: Trying var at task
       vars:
