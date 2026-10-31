@@ -10,7 +10,8 @@
   vars_files:
     - vars.yaml
   tasks:
-    vars:
-      text1: Variable at Task
-    debug:
-      msg: "Printing from {{text1}}"
+    - name: Checking var preference
+      vars:
+        text1: Variable at Task
+      debug:
+        msg: "Printing from {{text1}}"
