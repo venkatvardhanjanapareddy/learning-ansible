@@ -3,10 +3,10 @@
   connection: local
   vars:
     textone: "Variable-at-PLAY"
-  vars_prompt:
-    - name: textone
-      prompt: "Variable-from-prompt"
-      private: false
+  # vars_prompt:
+  #   - name: textone
+  #     prompt: "Variable-from-prompt"
+  #     private: false
   vars_files:
     - vars.yaml
   tasks:
@@ -15,3 +15,7 @@
       #   textone: "Variable-at-Task"
       debug:
         msg: "Printing from {{ textone }}"
+# first from cli
+# 2nd is task
+# 3rd is file
+# 4th is prompt
