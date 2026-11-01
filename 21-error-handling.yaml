@@ -1,10 +1,11 @@
-- name: error handling known errors
+- name: create error
   hosts: local
   connection: local
   tasks:
     - name: check if user exixts or not
       command: id roboshop
       register: user_id
+      ignore_errors: true
     - name: print the o/p
       debug:
         msg: "{{ user_id }}"
