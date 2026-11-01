@@ -9,3 +9,6 @@
     - name: print the o/p
       debug:
         msg: "{{ user_id }}"
+    - name: create user
+      command: useradd roboshop
+      when: user_id.rc != 0 # creating user only when the user isnlt exist. rc returns 1 if the user is not there.
