@@ -1,6 +1,7 @@
 - name: create error
   hosts: local
   connection: local
+  become: yes
   tasks:
     - name: check if user exixts or not
       command: id roboshop
